@@ -80,8 +80,7 @@ const I18N = {
 
 "home.ctaTitle": "Prêt(e) à organiser votre événement ?",
 "home.ctaLead": "Indiquez la date, la ville, le nombre d’invités et le style souhaité. Nous répondons rapidement avec un devis clair.",
-
-     
+  
     // ABOUT
     "about.title": "À propos",
     "about.lead": "Aimée Bridal Events est une entreprise basée à Yaoundé, spécialisée dans la décoration événementielle, l’organisation de mariages et le service traiteur, avec possibilité d’intervention partout au Cameroun.",
