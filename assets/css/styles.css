@@ -475,4 +475,20 @@ input:focus, textarea:focus, select:focus{
 @media (max-width: 980px){
   .brandLogo{ height:44px; }
 }
+/* =========================
+   HEADER LOGO – SIZE FIX
+   ========================= */
+
+.brandLogo{
+  height: 64px;          /* increased for readability */
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+@media (max-width: 980px){
+  .brandLogo{
+    height: 54px;
+  }
+}
 
