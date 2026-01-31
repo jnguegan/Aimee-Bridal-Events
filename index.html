@@ -13,54 +13,6 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/styles.css" />
-
-  <!-- HERO PHOTO styles (safe to keep here; won’t break your existing design) -->
-  <style>
-    .heroPhoto{
-      border-radius: 22px;
-      overflow: hidden;
-      position: relative;
-      min-height: 460px;
-      background: #fff;
-      border: 1px solid rgba(191,160,106,0.18);
-      box-shadow: 0 26px 70px rgba(191,160,106,0.12), 0 18px 44px rgba(17,24,39,0.08);
-    }
-    .heroPhoto img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transform: scale(1.02);
-    }
-    .heroOverlay{
-      position:absolute;
-      inset:0;
-      background:
-        linear-gradient(90deg, rgba(251,250,247,0.94) 0%, rgba(251,250,247,0.80) 45%, rgba(251,250,247,0.24) 80%, rgba(251,250,247,0.08) 100%),
-        radial-gradient(700px 420px at 20% 35%, rgba(191,160,106,0.18), transparent 60%);
-    }
-    .heroContentOnPhoto{
-      position:absolute;
-      inset:0;
-      display:flex;
-      align-items:center;
-      padding: 30px;
-    }
-    @media (max-width: 980px){
-      .heroPhoto{ min-height: 560px; }
-      .heroOverlay{
-        background:
-          linear-gradient(180deg, rgba(251,250,247,0.94) 0%, rgba(251,250,247,0.78) 60%, rgba(251,250,247,0.18) 100%),
-          radial-gradient(700px 420px at 30% 25%, rgba(191,160,106,0.16), transparent 60%);
-      }
-      .heroContentOnPhoto{ padding: 18px; align-items:flex-start; }
-    }
-
-    /* Small luxury polish for images inside cards */
-    .card img{
-      box-shadow: 0 18px 40px rgba(17,24,39,0.10);
-    }
-  </style>
 </head>
 
 <body data-page="home">
@@ -71,7 +23,6 @@
       <div class="nav">
 
         <a class="brand" href="index.html" aria-label="Aimée Bridal Events Home">
-          <!-- Keep your logo.png path (no rework) -->
           <img src="assets/img/logo.png" alt="Aimée Bridal Events" height="38">
           <div>
             <h1>Aimée Bridal Events</h1>
@@ -108,14 +59,12 @@
     <div class="wrap">
       <div class="heroPhoto">
         <img src="assets/img/gallery/decor-ivory-setup.jpg" alt="Luxury wedding decor in ivory and gold">
-
         <div class="heroOverlay"></div>
 
         <div class="heroContentOnPhoto">
           <div style="max-width: 700px;">
             <div class="badge" data-i18n="home.badge">Based in Yaoundé • Nationwide service</div>
 
-            <!-- Uses your existing i18n keys -->
             <h2 class="heroTitle" data-i18n="home.title">Every moment becomes magical</h2>
 
             <p class="heroSub" data-i18n="home.subtitle">
@@ -137,27 +86,27 @@
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
 
-  <!-- SIGNATURE DECOR (YOUR NEW PHOTO) -->
+  <!-- SIGNATURE DECOR (your new image) -->
   <section class="section">
     <div class="wrap">
       <div class="grid2">
 
         <div class="card">
-          <!-- NEW keys (I give you the translations below) -->
           <h2 data-i18n="home.signatureTitle">Signature luxury décor</h2>
           <p class="lead" data-i18n="home.signatureLead">
             Ivory draping, premium florals and warm lighting—designed for elegant, timeless celebrations.
           </p>
 
           <ul class="list">
-            <li data-i18n="home.signaturePoint1">Ceremony &amp; reception styling</li>
+            <li data-i18n="home.signaturePoint1">Ceremony &amp; reception décor</li>
             <li data-i18n="home.signaturePoint2">Gold + ivory “platinum wedding” look</li>
-            <li data-i18n="home.signaturePoint3">Installation + coordination + teardown</li>
+            <li data-i18n="home.signaturePoint3">Setup + coordination + teardown</li>
           </ul>
 
           <div class="ctaRow" style="margin-top:14px;">
@@ -179,7 +128,7 @@
   </section>
 
 
-  <!-- SIMPLE PROCESS (uses your existing keys) -->
+  <!-- SIMPLE PROCESS -->
   <section class="section">
     <div class="wrap">
       <h2 data-i18n="home.sectionTitle">Simple, premium and reliable</h2>
@@ -195,12 +144,12 @@
 
         <div class="card">
           <h3>02. <span data-i18n="home.step2Title">Quote</span></h3>
-          <p class="muted" data-i18n="home.step2Text">Clear proposal + validation in steps.</p>
+          <p class="muted" data-i18n="home.step2Text">Clear proposal + step-by-step validation.</p>
         </div>
 
         <div class="card">
           <h3>03. <span data-i18n="home.step3Title">Execution</span></h3>
-          <p class="muted" data-i18n="home.step3Text">Installation + coordination + teardown.</p>
+          <p class="muted" data-i18n="home.step3Text">Setup + coordination + teardown.</p>
         </div>
       </div>
     </div>
@@ -217,15 +166,18 @@
 
       <div class="portfolioGrid">
         <div class="ph" style="background:none; padding:0;">
-          <img src="assets/img/gallery/decor-ivory-setup.jpg" alt="Ivory decor setup" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
+          <img src="assets/img/gallery/decor-ivory-setup.jpg" alt="Ivory decor setup"
+               style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
         </div>
 
         <div class="ph" style="background:none; padding:0;">
-          <img src="assets/img/gallery/decor-signature-stage.jpg" alt="Signature decor stage" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
+          <img src="assets/img/gallery/decor-signature-stage.jpg" alt="Signature decor stage"
+               style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
         </div>
 
         <div class="ph" style="background:none; padding:0;">
-          <img src="assets/img/gallery/catering-canapes.jpg" alt="Canapés catering" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
+          <img src="assets/img/gallery/catering-canapes.jpg" alt="Canapés catering"
+               style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
         </div>
       </div>
 
@@ -268,7 +220,7 @@
         </div>
       </div>
 
-      <div class="footerRow" style="margin-top:10px; opacity:.8;">
+      <div class="footerRow" style="margin-top:10px; opacity:.85;">
         <div>© <span id="year"></span> Aimée Bridal Events</div>
         <div data-i18n="footer.rights">All rights reserved</div>
       </div>
