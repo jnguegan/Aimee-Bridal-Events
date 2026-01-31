@@ -13,17 +13,66 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <!-- HERO PHOTO styles (safe to keep here; won’t break your existing design) -->
+  <style>
+    .heroPhoto{
+      border-radius: 22px;
+      overflow: hidden;
+      position: relative;
+      min-height: 460px;
+      background: #fff;
+      border: 1px solid rgba(191,160,106,0.18);
+      box-shadow: 0 26px 70px rgba(191,160,106,0.12), 0 18px 44px rgba(17,24,39,0.08);
+    }
+    .heroPhoto img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform: scale(1.02);
+    }
+    .heroOverlay{
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(90deg, rgba(251,250,247,0.94) 0%, rgba(251,250,247,0.80) 45%, rgba(251,250,247,0.24) 80%, rgba(251,250,247,0.08) 100%),
+        radial-gradient(700px 420px at 20% 35%, rgba(191,160,106,0.18), transparent 60%);
+    }
+    .heroContentOnPhoto{
+      position:absolute;
+      inset:0;
+      display:flex;
+      align-items:center;
+      padding: 30px;
+    }
+    @media (max-width: 980px){
+      .heroPhoto{ min-height: 560px; }
+      .heroOverlay{
+        background:
+          linear-gradient(180deg, rgba(251,250,247,0.94) 0%, rgba(251,250,247,0.78) 60%, rgba(251,250,247,0.18) 100%),
+          radial-gradient(700px 420px at 30% 25%, rgba(191,160,106,0.16), transparent 60%);
+      }
+      .heroContentOnPhoto{ padding: 18px; align-items:flex-start; }
+    }
+
+    /* Small luxury polish for images inside cards */
+    .card img{
+      box-shadow: 0 18px 40px rgba(17,24,39,0.10);
+    }
+  </style>
 </head>
 
-<body>
+<body data-page="home">
 
-  <!-- TOPBAR / NAV -->
+  <!-- HEADER / NAV -->
   <header class="topbar">
     <div class="wrap">
       <div class="nav">
 
         <a class="brand" href="index.html" aria-label="Aimée Bridal Events Home">
-          <img src="assets/img/logo.png" alt="Aimée Bridal Events" height="38" style="border-radius:10px; border:1px solid rgba(191,160,106,0.18);">
+          <!-- Keep your logo.png path (no rework) -->
+          <img src="assets/img/logo.png" alt="Aimée Bridal Events" height="38">
           <div>
             <h1>Aimée Bridal Events</h1>
             <p data-i18n="nav.tagline">Elegant events across Cameroon</p>
@@ -31,13 +80,13 @@
         </a>
 
         <nav class="links" aria-label="Primary navigation">
-          <a class="active" href="index.html" data-i18n="nav.home">Home</a>
-          <a href="about.html" data-i18n="nav.about">About</a>
-          <a href="services.html" data-i18n="nav.services">Services</a>
-          <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
-          <a href="packages.html" data-i18n="nav.packages">Packages</a>
-          <a href="reviews.html" data-i18n="nav.reviews">Reviews</a>
-          <a href="contact.html" data-i18n="nav.contact">Contact</a>
+          <a href="index.html" data-i18n="nav.home" data-nav="home">Home</a>
+          <a href="about.html" data-i18n="nav.about" data-nav="about">About</a>
+          <a href="services.html" data-i18n="nav.services" data-nav="services">Services</a>
+          <a href="portfolio.html" data-i18n="nav.portfolio" data-nav="portfolio">Portfolio</a>
+          <a href="packages.html" data-i18n="nav.packages" data-nav="packages">Packages</a>
+          <a href="reviews.html" data-i18n="nav.testimonials" data-nav="testimonials">Reviews</a>
+          <a href="contact.html" data-i18n="nav.contact" data-nav="contact">Contact</a>
         </nav>
 
         <div class="lang">
@@ -46,7 +95,7 @@
             <option value="fr">FR</option>
           </select>
 
-          <a class="btn btnPrimary" href="contact.html" data-i18n="nav.quote">Request a quote</a>
+          <a class="btn btnPrimary" href="contact.html" data-i18n="nav.cta">Request a quote</a>
         </div>
 
       </div>
@@ -57,18 +106,16 @@
   <!-- HERO WITH PHOTO BACKGROUND -->
   <section class="hero">
     <div class="wrap">
-
       <div class="heroPhoto">
-        <!-- HERO IMAGE 1 -->
         <img src="assets/img/gallery/decor-ivory-setup.jpg" alt="Luxury wedding decor in ivory and gold">
 
         <div class="heroOverlay"></div>
 
         <div class="heroContentOnPhoto">
-          <div style="max-width: 680px;">
+          <div style="max-width: 700px;">
             <div class="badge" data-i18n="home.badge">Based in Yaoundé • Nationwide service</div>
 
-            <!-- Keep your existing i18n keys -->
+            <!-- Uses your existing i18n keys -->
             <h2 class="heroTitle" data-i18n="home.title">Every moment becomes magical</h2>
 
             <p class="heroSub" data-i18n="home.subtitle">
@@ -76,9 +123,9 @@
             </p>
 
             <div class="ctaRow">
-              <a class="btn btnPrimary" href="contact.html" data-i18n="home.ctaQuote">Request a quote</a>
-              <a class="btn" href="portfolio.html" data-i18n="home.ctaPortfolio">View portfolio</a>
-              <a class="btn" href="tel:+237640359718" data-i18n="home.ctaCall">Call now</a>
+              <a class="btn btnPrimary" href="contact.html" data-i18n="home.cta1">Request a quote</a>
+              <a class="btn" href="portfolio.html" data-i18n="home.cta2">View portfolio</a>
+              <a class="btn" href="tel:+237640359718" data-i18n="home.cta3">Call now</a>
             </div>
 
             <div class="pillRow">
@@ -91,35 +138,35 @@
           </div>
         </div>
       </div>
-
     </div>
   </section>
 
 
-  <!-- SIGNATURE DECOR SECTION (WITH YOUR NEW PHOTO) -->
+  <!-- SIGNATURE DECOR (YOUR NEW PHOTO) -->
   <section class="section">
     <div class="wrap">
       <div class="grid2">
 
         <div class="card">
+          <!-- NEW keys (I give you the translations below) -->
           <h2 data-i18n="home.signatureTitle">Signature luxury décor</h2>
           <p class="lead" data-i18n="home.signatureLead">
             Ivory draping, premium florals and warm lighting—designed for elegant, timeless celebrations.
           </p>
+
           <ul class="list">
             <li data-i18n="home.signaturePoint1">Ceremony &amp; reception styling</li>
             <li data-i18n="home.signaturePoint2">Gold + ivory “platinum wedding” look</li>
-            <li data-i18n="home.signaturePoint3">Installation + coordination + dismantling</li>
+            <li data-i18n="home.signaturePoint3">Installation + coordination + teardown</li>
           </ul>
 
           <div class="ctaRow" style="margin-top:14px;">
-            <a class="btn btnPrimary" href="contact.html" data-i18n="home.ctaQuote">Request a quote</a>
-            <a class="btn" href="services.html" data-i18n="home.ctaServices">Explore services</a>
+            <a class="btn btnPrimary" href="contact.html" data-i18n="home.cta1">Request a quote</a>
+            <a class="btn" href="services.html" data-i18n="home.signatureCta2">Explore services</a>
           </div>
         </div>
 
         <div class="card" style="padding:12px;">
-          <!-- HERO IMAGE 2 (YOUR NEW IMAGE) -->
           <img
             src="assets/img/gallery/decor-signature-stage.jpg"
             alt="Luxury ivory decor stage with florals and warm lighting"
@@ -132,11 +179,11 @@
   </section>
 
 
-  <!-- SIMPLE PROCESS -->
+  <!-- SIMPLE PROCESS (uses your existing keys) -->
   <section class="section">
     <div class="wrap">
-      <h2 data-i18n="home.processTitle">Simple, premium and reliable</h2>
-      <p class="lead" data-i18n="home.processLead">
+      <h2 data-i18n="home.sectionTitle">Simple, premium and reliable</h2>
+      <p class="lead" data-i18n="home.sectionLead">
         We create elegant setups, manage key logistics, and coordinate on the day—so you can truly enjoy your event.
       </p>
 
@@ -153,14 +200,14 @@
 
         <div class="card">
           <h3>03. <span data-i18n="home.step3Title">Execution</span></h3>
-          <p class="muted" data-i18n="home.step3Text">Installation + coordination + dismantling.</p>
+          <p class="muted" data-i18n="home.step3Text">Installation + coordination + teardown.</p>
         </div>
       </div>
     </div>
   </section>
 
 
-  <!-- QUICK PORTFOLIO PREVIEW -->
+  <!-- PORTFOLIO PREVIEW -->
   <section class="section">
     <div class="wrap">
       <h2 data-i18n="home.previewTitle">Portfolio highlights</h2>
@@ -183,22 +230,22 @@
       </div>
 
       <div style="margin-top:14px;">
-        <a class="btn" href="portfolio.html" data-i18n="home.ctaPortfolio">View portfolio</a>
+        <a class="btn" href="portfolio.html" data-i18n="home.cta2">View portfolio</a>
       </div>
     </div>
   </section>
 
 
-  <!-- CONTACT CTA -->
+  <!-- CTA -->
   <section class="section">
     <div class="wrap">
       <div class="card">
         <h2 data-i18n="home.ctaTitle">Ready to plan your event?</h2>
         <p class="lead" data-i18n="home.ctaLead">
-          Tell us the date, city, number of guests, and your preferred style. We reply quickly with a clear quote.
+          Share the date, city, number of guests and your style. We reply quickly with a clear quote.
         </p>
         <div class="ctaRow">
-          <a class="btn btnPrimary" href="contact.html" data-i18n="home.ctaQuote">Request a quote</a>
+          <a class="btn btnPrimary" href="contact.html" data-i18n="home.cta1">Request a quote</a>
           <a class="btn" href="tel:+237640359718">+237 640 359 718</a>
         </div>
       </div>
@@ -212,7 +259,7 @@
       <div class="footerRow">
         <div>
           <strong>Aimée Bridal Events</strong><br>
-          <span data-i18n="footer.location">Based in Yaoundé — available nationwide (Cameroon)</span>
+          <span data-i18n="footer.line">Based in Yaoundé • Nationwide service in Cameroon</span>
         </div>
 
         <div>
@@ -220,38 +267,17 @@
           <a href="mailto:aimeebridalEvents@gmail.com">aimeebridalEvents@gmail.com</a>
         </div>
       </div>
+
+      <div class="footerRow" style="margin-top:10px; opacity:.8;">
+        <div>© <span id="year"></span> Aimée Bridal Events</div>
+        <div data-i18n="footer.rights">All rights reserved</div>
+      </div>
     </div>
   </footer>
 
 
   <!-- i18n -->
   <script src="assets/js/i18n.js"></script>
-
-  <!-- Language selector hook (works with papSetLang if you already use it) -->
-  <script>
-    (function () {
-      const sel = document.getElementById('langSelect');
-
-      // Try to read saved language
-      const saved = localStorage.getItem('pap_lang') || localStorage.getItem('lang') || 'en';
-      sel.value = saved;
-
-      // Apply at load (if your i18n.js exposes papSetLang)
-      if (typeof window.papSetLang === 'function') {
-        window.papSetLang(saved);
-      }
-
-      sel.addEventListener('change', function () {
-        const lang = sel.value;
-        localStorage.setItem('pap_lang', lang);
-        localStorage.setItem('lang', lang);
-
-        if (typeof window.papSetLang === 'function') {
-          window.papSetLang(lang);
-        }
-      });
-    })();
-  </script>
 
 </body>
 </html>
