@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Aimée Bridal Events</title>
+  <meta name="description" content="Contact et demande de devis: Yaoundé + service national au Cameroun." />
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body data-page="contact">
+  <header class="topbar">
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="index.html">
+          <div class="logo" aria-hidden="true">A</div>
+          <div>
+            <h1>Aimée Bridal Events</h1>
+            <p data-i18n="nav.tagline">Événements élégants au Cameroun</p>
+          </div>
+        </a>
+
+        <nav class="links" aria-label="Primary">
+          <a href="index.html" data-nav="home" data-i18n="nav.home">Accueil</a>
+          <a href="about.html" data-nav="about" data-i18n="nav.about">À propos</a>
+          <a href="services.html" data-nav="services" data-i18n="nav.services">Services</a>
+          <a href="portfolio.html" data-nav="portfolio" data-i18n="nav.portfolio">Réalisations</a>
+          <a href="packages.html" data-nav="packages" data-i18n="nav.packages">Formules</a>
+          <a href="testimonials.html" data-nav="testimonials" data-i18n="nav.testimonials">Avis</a>
+          <a href="contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="lang">
+          <select id="langSelect" aria-label="Language">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+          </select>
+          <a class="btn btnPrimary" href="contact.html" data-i18n="nav.cta">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="wrap">
+      <h2 data-i18n="contact.title">Contact & Devis</h2>
+      <p class="lead" data-i18n="contact.lead">
+        Indiquez la date, la ville, le type d’événement et le nombre d’invités. Nous répondons rapidement avec une proposition claire.
+      </p>
+
+      <div class="contactGrid">
+        <div class="card">
+          <h3 data-i18n="contact.infoTitle">Coordonnées</h3>
+          <p class="muted" style="margin:8px 0 0;">
+            <span data-i18n="contact.city">Basée à Yaoundé • Service national</span><br/>
+            <strong data-i18n="contact.phoneLabel">Téléphone:</strong> <a href="tel:+237640359718">+237 640 359 718</a><br/>
+            <strong>Email:</strong> <a href="mailto:aimeebridalevents@gmail.com">aimeebridalevents@gmail.com</a>
+          </p>
+
+          <hr style="border:0; border-top:1px solid var(--border); margin:16px 0;">
+          <h3 data-i18n="contact.howTitle">Comment ça marche</h3>
+          <ol class="list">
+            <li data-i18n="contact.step1">Vous remplissez le formulaire (date, ville, invités, style).</li>
+            <li data-i18n="contact.step2">Nous confirmons par appel/WhatsApp et envoyons un devis.</li>
+            <li data-i18n="contact.step3">Validation + acompte → planification → exécution jour J.</li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h3 data-i18n="contact.formTitle">Formulaire de demande</h3>
+
+          <form name="aimee-quote" method="POST" data-netlify="true">
+            <input type="hidden" name="form-name" value="aimee-quote" />
+
+            <label for="name" data-i18n="form.name">Nom complet</label>
+            <input id="name" name="name" type="text" placeholder="Nom" required />
+
+            <label for="phone" data-i18n="form.phone">Téléphone / WhatsApp</label>
+            <input id="phone" name="phone" type="tel" placeholder="+237 ..." required />
+
+            <label for="city" data-i18n="form.city">Ville (au Cameroun)</label>
+            <input id="city" name="city" type="text" placeholder="Yaoundé / Douala / ..." required />
+
+            <label for="eventType" data-i18n="form.type">Type d’événement</label>
+            <select id="eventType" name="eventType" required>
+              <option value="" data-i18n="form.select">Sélectionner…</option>
+              <option value="wedding" data-i18n="form.optWedding">Mariage</option>
+              <option value="baptism" data-i18n="form.optBaptism">Baptême</option>
+              <option value="corporate" data-i18n="form.optCorporate">Corporate</option>
+              <option value="birthday" data-i18n="form.optBirthday">Anniversaire</option>
+              <option value="other" data-i18n="form.optOther">Autre</option>
+            </select>
+
+            <label for="date" data-i18n="form.date">Date</label>
+            <input id="date" name="date" type="date" required />
+
+            <label for="guests" data-i18n="form.guests">Nombre d’invités</label>
+            <input id="guests" name="guests" type="number" min="1" placeholder="Ex: 120" required />
+
+            <label for="budget" data-i18n="form.budget">Budget estimatif (FCFA)</label>
+            <input id="budget" name="budget" type="text" placeholder="Ex: 500 000" />
+
+            <label for="message" data-i18n="form.message">Message (style, couleurs, besoins)</label>
+            <textarea id="message" name="message" placeholder="Décrivez votre vision…"></textarea>
+
+            <div class="ctaRow" style="margin-top:12px;">
+              <button class="btn btnPrimary" type="submit" data-i18n="form.submit">Envoyer ma demande</button>
+              <a class="btn" href="https://wa.me/237640359718" target="_blank" rel="noopener" data-i18n="form.whatsapp">WhatsApp direct</a>
+            </div>
+
+            <p class="small" data-i18n="form.note">
+              En envoyant ce formulaire, vous acceptez d’être contacté(e) pour finaliser le devis (appel/WhatsApp/email).
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footerRow">
+        <div>
+          <strong>Aimée Bridal Events</strong><br/>
+          <span data-i18n="footer.line">Basée à Yaoundé • Service national au Cameroun</span>
+        </div>
+        <div>
+          © <span id="year"></span> • <span data-i18n="footer.rights">Tous droits réservés</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+</body>
+</html>
