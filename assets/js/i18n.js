@@ -119,7 +119,7 @@ const I18N = {
 
     // PORTFOLIO
     "portfolio.title": "Réalisations",
-    "portfolio.lead": "Ajoutez vos photos ici : mariages, tables, buffets, détails. Les visuels construisent la confiance — surtout pour la diaspora.",
+    "portfolio.lead": "Photos reelles de mariages, tables, buffets de decorations.",
     "portfolio.p1": "Mariage — Décor floral",
     "portfolio.tag1": "Yaoundé",
     "portfolio.p2": "Table d’honneur — Doré & blanc",
@@ -298,7 +298,7 @@ const I18N = {
 
     // PORTFOLIO
     "portfolio.title": "Portfolio",
-    "portfolio.lead": "Add your real photos here: weddings, tables, buffets, details. Visuals build trust—especially for diaspora clients.",
+    "portfolio.lead": " Real photos of weddings, tables, buffets and decorations",
     "portfolio.p1": "Wedding — Floral décor",
     "portfolio.tag1": "Yaoundé",
     "portfolio.p2": "Head table — Gold & white",
