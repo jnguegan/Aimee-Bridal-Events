@@ -239,7 +239,7 @@ const I18N = {
 
 "home.ctaTitle": "Ready to plan your event?",
 "home.ctaLead": "Share the date, city, number of guests and your style. We reply quickly with a clear quote.",
-// HOME – New sections
+
 "home.signatureTitle": "Signature luxury décor",
 "home.signatureLead": "Ivory draping, premium florals and warm lighting—designed for elegant, timeless celebrations.",
 "home.signaturePoint1": "Ceremony & reception décor",
