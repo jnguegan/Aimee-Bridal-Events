@@ -1,127 +1,257 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Aimée Bridal Events — Elegant events across Cameroon</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Aimée Bridal Events — Cameroon</title>
-  <meta name="description" content="Décoration événementielle, organisation de mariages et traiteur au Cameroun. Basée à Yaoundé, interventions nationales." />
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Event decoration, wedding planning and catering services across Cameroon. Based in Yaoundé — nationwide service." />
+
+  <!-- Favicons -->
+  <link rel="icon" href="aimee-final-favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="aimee-final-favicon-180.png">
+  <link rel="icon" href="aimee-final-favicon-512.png" sizes="512x512">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 
-<body data-page="home">
+<body>
+
+  <!-- TOPBAR / NAV -->
   <header class="topbar">
     <div class="wrap">
       <div class="nav">
-        <a class="brand" href="index.html">
-         <img src="assets/img/logo.png" alt="Aimée Bridal Events" height="38">
+
+        <a class="brand" href="index.html" aria-label="Aimée Bridal Events Home">
+          <img src="assets/img/logo.png" alt="Aimée Bridal Events" height="38" style="border-radius:10px; border:1px solid rgba(191,160,106,0.18);">
           <div>
             <h1>Aimée Bridal Events</h1>
-            <p data-i18n="nav.tagline">Événements élégants au Cameroun</p>
+            <p data-i18n="nav.tagline">Elegant events across Cameroon</p>
           </div>
         </a>
 
-        <nav class="links" aria-label="Primary">
-          <a href="index.html" data-nav="home" data-i18n="nav.home">Accueil</a>
-          <a href="about.html" data-nav="about" data-i18n="nav.about">À propos</a>
-          <a href="services.html" data-nav="services" data-i18n="nav.services">Services</a>
-          <a href="portfolio.html" data-nav="portfolio" data-i18n="nav.portfolio">Réalisations</a>
-          <a href="packages.html" data-nav="packages" data-i18n="nav.packages">Formules</a>
-          <a href="testimonials.html" data-nav="testimonials" data-i18n="nav.testimonials">Avis</a>
-          <a href="contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a>
+        <nav class="links" aria-label="Primary navigation">
+          <a class="active" href="index.html" data-i18n="nav.home">Home</a>
+          <a href="about.html" data-i18n="nav.about">About</a>
+          <a href="services.html" data-i18n="nav.services">Services</a>
+          <a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a>
+          <a href="packages.html" data-i18n="nav.packages">Packages</a>
+          <a href="reviews.html" data-i18n="nav.reviews">Reviews</a>
+          <a href="contact.html" data-i18n="nav.contact">Contact</a>
         </nav>
 
         <div class="lang">
-          <select id="langSelect" aria-label="Language">
-            <option value="fr">FR</option>
+          <select id="langSelect" aria-label="Language selector">
             <option value="en">EN</option>
+            <option value="fr">FR</option>
           </select>
-          <a class="btn btnPrimary" href="contact.html" data-i18n="nav.cta">Demander un devis</a>
+
+          <a class="btn btnPrimary" href="contact.html" data-i18n="nav.quote">Request a quote</a>
         </div>
+
       </div>
     </div>
   </header>
 
-  <main class="hero">
+
+  <!-- HERO WITH PHOTO BACKGROUND -->
+  <section class="hero">
     <div class="wrap">
-      <div class="heroGrid">
-        <section class="heroCard">
-          <div class="badge" data-i18n="home.badge">Basée à Yaoundé • Service national</div>
-          <h2 class="heroTitle" data-i18n="home.title">Chaque instant devient magique</h2>
-          <p class="heroSub" data-i18n="home.subtitle">
-            Décoration événementielle, organisation de mariages et service traiteur partout au Cameroun.
-            Une expérience élégante, fluide et sans stress.
-          </p>
 
-          <div class="ctaRow">
-            <a class="btn btnPrimary" href="contact.html" data-i18n="home.cta1">Demander un devis</a>
-            <a class="btn" href="portfolio.html" data-i18n="home.cta2">Voir nos réalisations</a>
-            <a class="btn" href="tel:+237640359718" data-i18n="home.cta3">Appeler maintenant</a>
-          </div>
+      <div class="heroPhoto">
+        <!-- HERO IMAGE 1 -->
+        <img src="assets/img/gallery/decor-ivory-setup.jpg" alt="Luxury wedding decor in ivory and gold">
 
-          <div class="pillRow">
-            <span class="pill" data-i18n="home.pill1">Mariages</span>
-            <span class="pill" data-i18n="home.pill2">Baptêmes</span>
-            <span class="pill" data-i18n="home.pill3">Événements corporate</span>
-            <span class="pill" data-i18n="home.pill4">Traiteur</span>
-            <span class="pill" data-i18n="home.pill5">Déplacements possibles</span>
-          </div>
-        </section>
+        <div class="heroOverlay"></div>
 
-        <aside style="display:grid; gap:12px;">
-          <div class="miniCard">
-            <h3 data-i18n="home.card1Title">Service national</h3>
-            <p data-i18n="home.card1Text">Interventions possibles à Yaoundé, Douala, Bafoussam, Kribi, Garoua et partout au Cameroun (sur devis).</p>
-          </div>
-          <div class="miniCard">
-            <h3 data-i18n="home.card2Title">Un seul interlocuteur</h3>
-            <p data-i18n="home.card2Text">Décor + traiteur + coordination : une solution complète, claire, et bien organisée.</p>
-          </div>
-          <div class="miniCard">
-            <h3 data-i18n="home.card3Title">Expérience hôtellerie</h3>
-            <p data-i18n="home.card3Text">Standards de service, ponctualité, présentation et attention aux détails.</p>
-          </div>
-        </aside>
-      </div>
+        <div class="heroContentOnPhoto">
+          <div style="max-width: 680px;">
+            <div class="badge" data-i18n="home.badge">Based in Yaoundé • Nationwide service</div>
 
-      <section class="section" style="padding-top:18px;">
-        <h2 data-i18n="home.sectionTitle">Une approche simple, premium et fiable</h2>
-        <p class="lead" data-i18n="home.sectionLead">
-          Nous créons des ambiances élégantes, gérons la logistique essentielle et coordonnons le jour J pour que vous profitiez pleinement.
-        </p>
-        <div class="grid3">
-          <div class="card">
-            <h3>01. Brief</h3>
-            <p class="muted">Date, ville, invités, style, budget.</p>
-          </div>
-          <div class="card">
-            <h3>02. Devis</h3>
-            <p class="muted">Proposition claire + validation étapes.</p>
-          </div>
-          <div class="card">
-            <h3>03. Exécution</h3>
-            <p class="muted">Installation + coordination + démontage.</p>
+            <!-- Keep your existing i18n keys -->
+            <h2 class="heroTitle" data-i18n="home.title">Every moment becomes magical</h2>
+
+            <p class="heroSub" data-i18n="home.subtitle">
+              Event decoration, wedding planning, and catering services across Cameroon. Elegant, smooth, and stress-free.
+            </p>
+
+            <div class="ctaRow">
+              <a class="btn btnPrimary" href="contact.html" data-i18n="home.ctaQuote">Request a quote</a>
+              <a class="btn" href="portfolio.html" data-i18n="home.ctaPortfolio">View portfolio</a>
+              <a class="btn" href="tel:+237640359718" data-i18n="home.ctaCall">Call now</a>
+            </div>
+
+            <div class="pillRow">
+              <span class="pill" data-i18n="home.pill1">Weddings</span>
+              <span class="pill" data-i18n="home.pill2">Baptisms</span>
+              <span class="pill" data-i18n="home.pill3">Corporate events</span>
+              <span class="pill" data-i18n="home.pill4">Catering</span>
+              <span class="pill" data-i18n="home.pill5">Travel available</span>
+            </div>
           </div>
         </div>
-      </section>
-    </div>
-  </main>
+      </div>
 
+    </div>
+  </section>
+
+
+  <!-- SIGNATURE DECOR SECTION (WITH YOUR NEW PHOTO) -->
+  <section class="section">
+    <div class="wrap">
+      <div class="grid2">
+
+        <div class="card">
+          <h2 data-i18n="home.signatureTitle">Signature luxury décor</h2>
+          <p class="lead" data-i18n="home.signatureLead">
+            Ivory draping, premium florals and warm lighting—designed for elegant, timeless celebrations.
+          </p>
+          <ul class="list">
+            <li data-i18n="home.signaturePoint1">Ceremony &amp; reception styling</li>
+            <li data-i18n="home.signaturePoint2">Gold + ivory “platinum wedding” look</li>
+            <li data-i18n="home.signaturePoint3">Installation + coordination + dismantling</li>
+          </ul>
+
+          <div class="ctaRow" style="margin-top:14px;">
+            <a class="btn btnPrimary" href="contact.html" data-i18n="home.ctaQuote">Request a quote</a>
+            <a class="btn" href="services.html" data-i18n="home.ctaServices">Explore services</a>
+          </div>
+        </div>
+
+        <div class="card" style="padding:12px;">
+          <!-- HERO IMAGE 2 (YOUR NEW IMAGE) -->
+          <img
+            src="assets/img/gallery/decor-signature-stage.jpg"
+            alt="Luxury ivory decor stage with florals and warm lighting"
+            style="width:100%; height:100%; max-height:440px; object-fit:cover; border-radius:18px; border:1px solid rgba(199,201,207,0.45);"
+          >
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SIMPLE PROCESS -->
+  <section class="section">
+    <div class="wrap">
+      <h2 data-i18n="home.processTitle">Simple, premium and reliable</h2>
+      <p class="lead" data-i18n="home.processLead">
+        We create elegant setups, manage key logistics, and coordinate on the day—so you can truly enjoy your event.
+      </p>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>01. <span data-i18n="home.step1Title">Brief</span></h3>
+          <p class="muted" data-i18n="home.step1Text">Date, city, guests, style, budget.</p>
+        </div>
+
+        <div class="card">
+          <h3>02. <span data-i18n="home.step2Title">Quote</span></h3>
+          <p class="muted" data-i18n="home.step2Text">Clear proposal + validation in steps.</p>
+        </div>
+
+        <div class="card">
+          <h3>03. <span data-i18n="home.step3Title">Execution</span></h3>
+          <p class="muted" data-i18n="home.step3Text">Installation + coordination + dismantling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- QUICK PORTFOLIO PREVIEW -->
+  <section class="section">
+    <div class="wrap">
+      <h2 data-i18n="home.previewTitle">Portfolio highlights</h2>
+      <p class="lead" data-i18n="home.previewLead">
+        A few examples of décor and catering style. More photos available on the portfolio page.
+      </p>
+
+      <div class="portfolioGrid">
+        <div class="ph" style="background:none; padding:0;">
+          <img src="assets/img/gallery/decor-ivory-setup.jpg" alt="Ivory decor setup" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
+        </div>
+
+        <div class="ph" style="background:none; padding:0;">
+          <img src="assets/img/gallery/decor-signature-stage.jpg" alt="Signature decor stage" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
+        </div>
+
+        <div class="ph" style="background:none; padding:0;">
+          <img src="assets/img/gallery/catering-canapes.jpg" alt="Canapés catering" style="width:100%; height:100%; object-fit:cover; border-radius:18px;">
+        </div>
+      </div>
+
+      <div style="margin-top:14px;">
+        <a class="btn" href="portfolio.html" data-i18n="home.ctaPortfolio">View portfolio</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTACT CTA -->
+  <section class="section">
+    <div class="wrap">
+      <div class="card">
+        <h2 data-i18n="home.ctaTitle">Ready to plan your event?</h2>
+        <p class="lead" data-i18n="home.ctaLead">
+          Tell us the date, city, number of guests, and your preferred style. We reply quickly with a clear quote.
+        </p>
+        <div class="ctaRow">
+          <a class="btn btnPrimary" href="contact.html" data-i18n="home.ctaQuote">Request a quote</a>
+          <a class="btn" href="tel:+237640359718">+237 640 359 718</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="wrap">
       <div class="footerRow">
         <div>
-          <strong>Aimée Bridal Events</strong><br/>
-          <span data-i18n="footer.line">Basée à Yaoundé • Service national au Cameroun</span>
+          <strong>Aimée Bridal Events</strong><br>
+          <span data-i18n="footer.location">Based in Yaoundé — available nationwide (Cameroon)</span>
         </div>
+
         <div>
-          © <span id="year"></span> • <span data-i18n="footer.rights">Tous droits réservés</span>
+          <a href="tel:+237640359718">+237 640 359 718</a> ·
+          <a href="mailto:aimeebridalEvents@gmail.com">aimeebridalEvents@gmail.com</a>
         </div>
       </div>
     </div>
   </footer>
 
+
+  <!-- i18n -->
   <script src="assets/js/i18n.js"></script>
+
+  <!-- Language selector hook (works with papSetLang if you already use it) -->
+  <script>
+    (function () {
+      const sel = document.getElementById('langSelect');
+
+      // Try to read saved language
+      const saved = localStorage.getItem('pap_lang') || localStorage.getItem('lang') || 'en';
+      sel.value = saved;
+
+      // Apply at load (if your i18n.js exposes papSetLang)
+      if (typeof window.papSetLang === 'function') {
+        window.papSetLang(saved);
+      }
+
+      sel.addEventListener('change', function () {
+        const lang = sel.value;
+        localStorage.setItem('pap_lang', lang);
+        localStorage.setItem('lang', lang);
+
+        if (typeof window.papSetLang === 'function') {
+          window.papSetLang(lang);
+        }
+      });
+    })();
+  </script>
+
 </body>
 </html>
