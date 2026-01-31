@@ -59,7 +59,7 @@ const I18N = {
 "home.step3Text": "Installation + coordination + démontage.",
 
 "home.ctaTitle": "Prêt(e) à organiser votre événement ?",
-"home.ctaLead": "Indiquez la date, la ville, le nombre d’invités et le style souhaité. Nous répondons rapidement avec un devis clair."
+"home.ctaLead": "Indiquez la date, la ville, le nombre d’invités et le style souhaité. Nous répondons rapidement avec un devis clair.",
 // HOME – New sections
 "home.signatureTitle": "Décor signature (luxe)",
 "home.signatureLead": "Drapés ivoire, fleurs premium et lumière chaleureuse — pour des célébrations élégantes et intemporelles.",
