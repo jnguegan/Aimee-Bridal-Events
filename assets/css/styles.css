@@ -409,4 +409,45 @@ input:focus, textarea:focus, select:focus{
 @media (max-width: 980px){
   .heroTitle{ font-size: 36px; }
 }
+/* HERO PHOTO BANNER */
+.heroPhoto{
+  border-radius: 22px;
+  overflow: hidden;
+  position: relative;
+  min-height: 420px;
+  background: #fff;
+  border: 1px solid rgba(191,160,106,0.18);
+  box-shadow: 0 26px 70px rgba(191,160,106,0.12), 0 18px 44px rgba(17,24,39,0.08);
+}
+
+.heroPhoto img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02);
+}
+
+.heroOverlay{
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg, rgba(251,250,247,0.92) 0%, rgba(251,250,247,0.76) 45%, rgba(251,250,247,0.25) 80%, rgba(251,250,247,0.10) 100%),
+    radial-gradient(700px 420px at 20% 35%, rgba(191,160,106,0.18), transparent 60%);
+}
+
+.heroContentOnPhoto{
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  padding: 28px;
+}
+
+@media (max-width: 980px){
+  .heroPhoto{ min-height: 520px; }
+  .heroOverlay{
+    background: linear-gradient(180deg, rgba(251,250,247,0.92) 0%, rgba(251,250,247,0.78) 55%, rgba(251,250,247,0.25) 100%);
+  }
+}
 
