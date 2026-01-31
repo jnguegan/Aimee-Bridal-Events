@@ -60,6 +60,26 @@ const I18N = {
 
 "home.ctaTitle": "Prêt(e) à organiser votre événement ?",
 "home.ctaLead": "Indiquez la date, la ville, le nombre d’invités et le style souhaité. Nous répondons rapidement avec un devis clair."
+// HOME – New sections
+"home.signatureTitle": "Décor signature (luxe)",
+"home.signatureLead": "Drapés ivoire, fleurs premium et lumière chaleureuse — pour des célébrations élégantes et intemporelles.",
+"home.signaturePoint1": "Décor cérémonie & réception",
+"home.signaturePoint2": "Style or + ivoire (effet “mariage platinum”)",
+"home.signaturePoint3": "Installation + coordination + démontage",
+"home.signatureCta2": "Découvrir les services",
+
+"home.previewTitle": "Aperçu de nos réalisations",
+"home.previewLead": "Quelques exemples de décor et de traiteur. Plus de photos dans la page Réalisations.",
+
+"home.step1Title": "Brief",
+"home.step1Text": "Date, ville, invités, style, budget.",
+"home.step2Title": "Devis",
+"home.step2Text": "Proposition claire + validation par étapes.",
+"home.step3Title": "Exécution",
+"home.step3Text": "Installation + coordination + démontage.",
+
+"home.ctaTitle": "Prêt(e) à organiser votre événement ?",
+"home.ctaLead": "Indiquez la date, la ville, le nombre d’invités et le style souhaité. Nous répondons rapidement avec un devis clair."
 
      
     // ABOUT
@@ -202,6 +222,26 @@ const I18N = {
     "home.sectionTitle": "Simple, premium and reliable",
     "home.sectionLead": "We create elegant setups, manage key logistics, and coordinate on the day—so you can truly enjoy your event.",
    "home.signatureTitle": "Signature luxury décor",
+"home.signatureLead": "Ivory draping, premium florals and warm lighting—designed for elegant, timeless celebrations.",
+"home.signaturePoint1": "Ceremony & reception décor",
+"home.signaturePoint2": "Gold + ivory “platinum wedding” look",
+"home.signaturePoint3": "Setup + coordination + teardown",
+"home.signatureCta2": "Explore services",
+
+"home.previewTitle": "Portfolio highlights",
+"home.previewLead": "A few examples of décor and catering style. More photos available on the portfolio page.",
+
+"home.step1Title": "Brief",
+"home.step1Text": "Date, city, guests, style, budget.",
+"home.step2Title": "Quote",
+"home.step2Text": "Clear proposal + step-by-step validation.",
+"home.step3Title": "Execution",
+"home.step3Text": "Setup + coordination + teardown.",
+
+"home.ctaTitle": "Ready to plan your event?",
+"home.ctaLead": "Share the date, city, number of guests and your style. We reply quickly with a clear quote."
+// HOME – New sections
+"home.signatureTitle": "Signature luxury décor",
 "home.signatureLead": "Ivory draping, premium florals and warm lighting—designed for elegant, timeless celebrations.",
 "home.signaturePoint1": "Ceremony & reception décor",
 "home.signaturePoint2": "Gold + ivory “platinum wedding” look",
