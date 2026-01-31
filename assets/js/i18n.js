@@ -258,9 +258,8 @@ const I18N = {
 "home.step3Text": "Setup + coordination + teardown.",
 
 "home.ctaTitle": "Ready to plan your event?",
-"home.ctaLead": "Share the date, city, number of guests and your style. We reply quickly with a clear quote."
-
-        
+"home.ctaLead": "Share the date, city, number of guests and your style. We reply quickly with a clear quote.",
+      
     // ABOUT
     "about.title": "About",
     "about.lead": "Aimée Bridal Events is a Yaoundé-based company specializing in event decoration, wedding planning, and catering, with the ability to serve clients across Cameroon.",
