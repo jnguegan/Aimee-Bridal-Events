@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Réalisations — Aimée Bridal Events</title>
+  <meta name="description" content="Portfolio : mariages, tables, buffets, décorations. Aimée Bridal Events, Cameroun." />
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body data-page="portfolio">
+  <header class="topbar">
+    <div class="wrap">
+      <div class="nav">
+        <a class="brand" href="index.html">
+          <div class="logo" aria-hidden="true">A</div>
+          <div>
+            <h1>Aimée Bridal Events</h1>
+            <p data-i18n="nav.tagline">Événements élégants au Cameroun</p>
+          </div>
+        </a>
+
+        <nav class="links" aria-label="Primary">
+          <a href="index.html" data-nav="home" data-i18n="nav.home">Accueil</a>
+          <a href="about.html" data-nav="about" data-i18n="nav.about">À propos</a>
+          <a href="services.html" data-nav="services" data-i18n="nav.services">Services</a>
+          <a href="portfolio.html" data-nav="portfolio" data-i18n="nav.portfolio">Réalisations</a>
+          <a href="packages.html" data-nav="packages" data-i18n="nav.packages">Formules</a>
+          <a href="testimonials.html" data-nav="testimonials" data-i18n="nav.testimonials">Avis</a>
+          <a href="contact.html" data-nav="contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="lang">
+          <select id="langSelect" aria-label="Language">
+            <option value="fr">FR</option>
+            <option value="en">EN</option>
+          </select>
+          <a class="btn btnPrimary" href="contact.html" data-i18n="nav.cta">Demander un devis</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="wrap">
+      <h2 data-i18n="portfolio.title">Réalisations</h2>
+      <p class="lead" data-i18n="portfolio.lead">
+        Ajoutez vos photos ici : mariages, tables, buffets, détails. Les visuels construisent la confiance — surtout pour la diaspora.
+      </p>
+
+      <div class="portfolioGrid">
+        <div class="ph">
+          <div class="phLabel">
+            <span data-i18n="portfolio.p1">Mariage — Décor floral</span>
+            <span data-i18n="portfolio.tag1">Yaoundé</span>
+          </div>
+        </div>
+        <div class="ph">
+          <div class="phLabel">
+            <span data-i18n="portfolio.p2">Table d’honneur — Doré & blanc</span>
+            <span data-i18n="portfolio.tag2">Douala</span>
+          </div>
+        </div>
+        <div class="ph">
+          <div class="phLabel">
+            <span data-i18n="portfolio.p3">Service traiteur — Buffet</span>
+            <span data-i18n="portfolio.tag3">Bafoussam</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ctaRow" style="margin-top:16px;">
+        <a class="btn btnPrimary" href="contact.html" data-i18n="portfolio.cta">Je veux le même style</a>
+      </div>
+
+      <div class="card" style="margin-top:14px;">
+        <h3>Tip</h3>
+        <p class="muted">Quand vous ajoutez vos vraies photos, remplacez chaque bloc “ph” par une image: <strong>&lt;img src="assets/img/p1.jpg"&gt;</strong> et gardez le label.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footerRow">
+        <div>
+          <strong>Aimée Bridal Events</strong><br/>
+          <span data-i18n="footer.line">Basée à Yaoundé • Service national au Cameroun</span>
+        </div>
+        <div>
+          © <span id="year"></span> • <span data-i18n="footer.rights">Tous droits réservés</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/i18n.js"></script>
+</body>
+</html>
