@@ -254,3 +254,159 @@ textarea{min-height:110px; resize:vertical}
   .links{display:none}
   .brand{min-width:auto}
 }
+
+/* ===========================
+   WOW / LUXURY REFINEMENT PATCH
+   Paste at the END of styles.css
+   =========================== */
+
+/* Slightly warmer page feel */
+body{
+  background:
+    radial-gradient(1100px 520px at 12% 0%, rgba(191,160,106,0.12), transparent 62%),
+    radial-gradient(900px 520px at 88% 8%, rgba(199,201,207,0.18), transparent 60%),
+    linear-gradient(180deg, #fbfaf7, #f6f1e6);
+}
+
+/* Header: more premium glass + softer separation */
+.topbar{
+  background: rgba(251,250,247,0.84);
+  border-bottom: 1px solid rgba(191,160,106,0.18);
+}
+
+/* Brand area: nicer rhythm */
+.brand h1{
+  font-weight: 650;
+  letter-spacing: 0.2px;
+}
+.brand p{
+  letter-spacing: 0.25px;
+}
+
+/* Nav links: softer + more bridal */
+.links a{
+  font-weight: 520;
+  letter-spacing: 0.15px;
+}
+.links a.active{
+  background: rgba(191,160,106,0.12);
+  border-color: rgba(191,160,106,0.38);
+}
+
+/* Hero card: true bridal glow */
+.heroCard{
+  background:
+    radial-gradient(900px 380px at 18% 12%, rgba(191,160,106,0.16), transparent 62%),
+    radial-gradient(700px 320px at 88% 28%, rgba(199,201,207,0.18), transparent 58%),
+    rgba(255,255,255,0.90);
+  border-color: rgba(191,160,106,0.24);
+  box-shadow:
+    0 26px 70px rgba(191,160,106,0.14),
+    0 18px 44px rgba(17,24,39,0.08);
+}
+
+/* Hero title: more couture */
+.heroTitle{
+  font-size: 44px;
+  letter-spacing: -0.6px;
+  line-height: 1.04;
+}
+.heroSub{
+  font-size: 15.5px;
+  line-height: 1.7;
+}
+
+/* Badge: more “platinum” */
+.badge{
+  background: rgba(191,160,106,0.10);
+  border-color: rgba(191,160,106,0.30);
+  color: #5b4323;
+  box-shadow: 0 10px 22px rgba(191,160,106,0.10);
+}
+
+/* Cards: warmer ivory, softer border, subtle lift */
+.card, .miniCard{
+  background: rgba(255,253,248,0.92);
+  border-color: rgba(199,201,207,0.45);
+  box-shadow: 0 14px 30px rgba(17,24,39,0.08);
+}
+
+/* Give right-side mini cards a tiny hover “luxury” feel */
+.miniCard{
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.miniCard:hover{
+  transform: translateY(-3px);
+  box-shadow:
+    0 18px 40px rgba(17,24,39,0.10),
+    0 18px 50px rgba(191,160,106,0.10);
+}
+
+/* Buttons: more premium champagne gradient */
+.btnPrimary{
+  background: linear-gradient(145deg, #c7ab78, #b69054);
+  border-color: rgba(191,160,106,0.65);
+  box-shadow:
+    0 16px 30px rgba(191,160,106,0.22),
+    0 10px 18px rgba(17,24,39,0.08);
+}
+.btnPrimary:hover{
+  filter: brightness(1.04);
+  transform: translateY(-1px);
+}
+
+/* Secondary buttons: cleaner bridal */
+.btn{
+  background: rgba(255,255,255,0.86);
+  border-color: rgba(199,201,207,0.55);
+}
+.btn:hover{
+  background: rgba(255,255,255,0.96);
+}
+
+/* Pills: reduce “tech” feel */
+.pill{
+  background: rgba(255,255,255,0.86);
+  border-color: rgba(199,201,207,0.50);
+}
+
+/* Section titles: slightly more luxe spacing */
+.section h2{
+  font-size: 26px;
+  letter-spacing: -0.2px;
+}
+.section p.lead{
+  font-size: 15.25px;
+  line-height: 1.75;
+}
+
+/* Portfolio placeholders: more premium */
+.ph{
+  background:
+    radial-gradient(520px 260px at 22% 28%, rgba(191,160,106,0.14), transparent 65%),
+    rgba(255,253,248,0.92);
+  border-color: rgba(199,201,207,0.45);
+  box-shadow: 0 14px 30px rgba(17,24,39,0.08);
+}
+
+/* Forms: softer and more premium */
+input, textarea, select{
+  background: rgba(255,255,255,0.94);
+  border-color: rgba(199,201,207,0.55);
+}
+input:focus, textarea:focus, select:focus{
+  border-color: rgba(191,160,106,0.55);
+  box-shadow: 0 0 0 4px rgba(191,160,106,0.12);
+}
+
+/* Footer: gentle fade */
+.footer{
+  background: linear-gradient(180deg, transparent, rgba(255,255,255,0.78));
+  border-top: 1px solid rgba(191,160,106,0.18);
+}
+
+/* Mobile: keep hero title elegant */
+@media (max-width: 980px){
+  .heroTitle{ font-size: 36px; }
+}
+
