@@ -79,7 +79,7 @@ const I18N = {
 "home.step3Text": "Installation + coordination + démontage.",
 
 "home.ctaTitle": "Prêt(e) à organiser votre événement ?",
-"home.ctaLead": "Indiquez la date, la ville, le nombre d’invités et le style souhaité. Nous répondons rapidement avec un devis clair."
+"home.ctaLead": "Indiquez la date, la ville, le nombre d’invités et le style souhaité. Nous répondons rapidement avec un devis clair.",
 
      
     // ABOUT
