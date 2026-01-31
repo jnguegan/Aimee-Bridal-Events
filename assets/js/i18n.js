@@ -238,7 +238,7 @@ const I18N = {
 "home.step3Text": "Setup + coordination + teardown.",
 
 "home.ctaTitle": "Ready to plan your event?",
-"home.ctaLead": "Share the date, city, number of guests and your style. We reply quickly with a clear quote."
+"home.ctaLead": "Share the date, city, number of guests and your style. We reply quickly with a clear quote.",
 // HOME – New sections
 "home.signatureTitle": "Signature luxury décor",
 "home.signatureLead": "Ivory draping, premium florals and warm lighting—designed for elegant, timeless celebrations.",
