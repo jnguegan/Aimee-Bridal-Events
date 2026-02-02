@@ -626,5 +626,47 @@ input:focus, textarea:focus, select:focus{
     height: 56px !important;
   }
 }
+/* Header brand layout (allows a bigger logo) */
+.topbar .nav .brand{
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+}
+
+/* Make sure the header is not clipping the brand */
+.topbar{
+  height: auto;           /* in case it was fixed elsewhere */
+  overflow: visible;      /* in case something was clipping */
+  padding: 14px 0;        /* gives room for a luxury-sized logo */
+}
+
+.topbar .nav{
+  min-height: 86px;       /* ensures the row can actually grow */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* The logo itself */
+.topbar .nav .brand .brandLogo{
+  height: 64px;           /* <- adjust to taste (60–72 is luxury-friendly) */
+  width: auto;
+  max-height: none;       /* removes common constraints */
+  max-width: none;
+  display: block;
+  object-fit: contain;
+}
+
+/* Optional: make the text sit nicely with a bigger mark */
+.topbar .nav .brand h1{
+  margin: 0;
+  line-height: 1.05;
+}
+
+.topbar .nav .brand p{
+  margin: 4px 0 0;
+  line-height: 1.2;
+}
 
 
