@@ -597,5 +597,34 @@ input:focus, textarea:focus, select:focus{
     max-height: 52px !important;
   }
 }
+/* ===========================
+   FORCE HEADER LOGO SIZE
+   =========================== */
+
+.topbar .brand .brandLogo{
+  height: 72px !important;   /* increase here */
+  width: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+/* Give the navbar enough height so the logo can show */
+.topbar .nav{
+  padding: 18px 0 !important;
+  align-items: center !important;
+}
+
+/* Prevent the brand link from shrinking the logo */
+.topbar .brand{
+  gap: 14px !important;
+  min-width: 260px !important;
+}
+
+/* Mobile */
+@media (max-width: 980px){
+  .topbar .brand .brandLogo{
+    height: 56px !important;
+  }
+}
 
 
