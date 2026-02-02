@@ -767,5 +767,51 @@ input:focus, textarea:focus, select:focus{
     position: relative;
   }
 }
+/* ===== Mobile menu toggle ===== */
+.menuToggle{
+  display: none;
+  border: 1px solid rgba(0,0,0,.15);
+  background: #fff;
+  border-radius: 12px;
+  padding: 10px 12px;
+  font-size: 20px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Mobile behavior */
+@media (max-width: 980px){
+  .menuToggle{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header.topbar .nav{
+    position: relative;
+  }
+
+  /* Hide nav links by default */
+  header.topbar nav.links{
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 16px;
+    right: 16px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.12);
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 0 18px 45px rgba(0,0,0,.12);
+    z-index: 9999;
+  }
+
+  /* Show nav when open */
+  header.topbar.menuOpen nav.links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 
 
