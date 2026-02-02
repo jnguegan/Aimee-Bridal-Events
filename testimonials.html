@@ -97,5 +97,27 @@
   </footer>
 
   <script src="assets/js/i18n.js"></script>
+  <script>
+  (function(){
+    const header = document.querySelector(".topbar");
+    const btn = document.querySelector(".menuToggle");
+    const nav = document.querySelector("#primaryNav");
+
+    if(!header || !btn || !nav) return;
+
+    btn.addEventListener("click", () => {
+      const open = header.classList.toggle("menuOpen");
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+
+    nav.addEventListener("click", (e) => {
+      if(e.target.closest("a")){
+        header.classList.remove("menuOpen");
+        btn.setAttribute("aria-expanded", "false");
+      }
+    });
+  })();
+</script>
+
 </body>
 </html>
