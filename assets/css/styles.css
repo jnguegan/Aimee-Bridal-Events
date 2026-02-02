@@ -559,3 +559,16 @@ input:focus, textarea:focus, select:focus{
   }
 }
 
+/* DEBUG: force any logo image to be bigger */
+.logo img{
+  height: 64px !important;
+  width: auto !important;
+}
+.logo{
+  width: auto !important;
+  height: auto !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
