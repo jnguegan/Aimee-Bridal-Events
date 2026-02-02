@@ -572,3 +572,21 @@ input:focus, textarea:focus, select:focus{
   box-shadow: none !important;
 }
 
+/* ===========================
+   FORCE HEADER LOGO SIZE
+   =========================== */
+
+.logo{
+  width: auto !important;
+  height: auto !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.logo img{
+  height: 64px !important;
+  width: auto !important;
+  display: block;
+}
+
