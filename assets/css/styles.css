@@ -668,5 +668,28 @@ input:focus, textarea:focus, select:focus{
   margin: 4px 0 0;
   line-height: 1.2;
 }
+/* ===== Header logo sizing (final) ===== */
+
+.topbar .brand .brandLogo{
+  height: 80px !important;  /* luxury size */
+  width: auto !important;
+  display: block;
+  object-fit: contain;
+  max-height: none !important;
+}
+
+/* Responsive: keep it slightly smaller but still readable */
+@media (max-width: 980px){
+  .topbar .brand .brandLogo{
+    height: 64px !important;
+    max-height: none !important;
+  }
+
+  /* IMPORTANT: do NOT cap all brand images */
+  .topbar .brand img{
+    height: auto !important;
+    max-height: none !important;
+  }
+}
 
 
